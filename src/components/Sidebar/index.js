@@ -8,6 +8,7 @@ import {
   faGithub,
   faYoutube,
   faSkype,
+  faInstagram,
 } from '@fortawesome/free-brands-svg-icons'
 import {
   faHome,
@@ -29,7 +30,8 @@ const Sidebar = () => {
         to="/"
         onClick={() => setShowNav(false)}>
         <img src={LogoS} alt="Logo" />
-        <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
+        <span className='sub-logo'>Shubham</span>
+        {/* <img className="sub-logo" src={LogoSubtitle} alt="slobodan" /> */}
       </Link>
       <nav className={showNav ? 'mobile-show' : ''}>
         <NavLink 
@@ -45,14 +47,6 @@ const Sidebar = () => {
           to="/about"
           onClick={() => setShowNav(false)}>
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
-        </NavLink>
-        <NavLink
-          activeclassname="active"
-          className="portfolio-link"
-          to="/portfolio"
-          onClick={() => setShowNav(false)}
-        >
-          <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
         </NavLink>
         <NavLink
           activeclassname="active"
@@ -72,7 +66,7 @@ const Sidebar = () => {
       <ul>
         <li>
           <a
-            href="https://www.linkedin.com/in/slobodan-gaji%C4%87-006bb8b8/"
+            href="https://www.linkedin.com/in/shubham-rawat-844787217/"
             target="_blank"
             rel="noreferrer"
           >
@@ -85,7 +79,7 @@ const Sidebar = () => {
         </li>
         <li>
           <a
-            href="https://github.com/bobangajicsm"
+            href="https://github.com/Shubhamrawatbox"
             target="_blank"
             rel="noreferrer"
           >
@@ -98,21 +92,12 @@ const Sidebar = () => {
         </li>
         <li>
           <a
-            href="https://www.youtube.com/channel/UCBu5ulO4d-d47lAVybpRTkw"
+            href="https://www.instagram.com/rwtshubham_00"
             rel="noreferrer"
             target="_blank"
           >
             <FontAwesomeIcon
-              icon={faYoutube}
-              color="#4d4d4e"
-              className="anchor-icon"
-            />
-          </a>
-        </li>
-        <li>
-          <a href="skype:live:bobangajicsm" rel="noreferrer" target="_blank">
-            <FontAwesomeIcon
-              icon={faSkype}
+              icon={faInstagram}
               color="#4d4d4e"
               className="anchor-icon"
             />
